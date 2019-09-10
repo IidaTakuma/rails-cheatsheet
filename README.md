@@ -1,10 +1,11 @@
 ## ゴール
 
-Rails 6.0.0をデータベースをPostgresqlを設定し、Yay! You’re on Rails! するところまで
+Rails 6.0.0をデータベースにPostgresqlを設定し、Yay! You’re on Rails! するところまで
 
 ## 前提
 
 ローカル環境で
+
 `$ rbenv -v`
 
 `$ node -v`
@@ -43,7 +44,7 @@ Rails 6.0.0をデータベースをPostgresqlを設定し、Yay! You’re on Rai
 - 「-Tr」「--skip-test」Miniテストを生成しないようにする。
 
 proj-name / docker-compose.ymlに以下を記入
-```
+```yaml
 version: '3.7'
 services:
   postgres:
@@ -59,7 +60,11 @@ services:
 
 ` $ docker-compose build`
 
+- 先ほど記入したDockerの設定ファイルから仮想環境を構築
+
 ` $docker-compose up`
+
+- Docker環境上のPostgresqlを起動
 
 ` $ bin/rails db:create`
 

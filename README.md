@@ -12,6 +12,7 @@
 `$ cd [proj-name]`
 
 `$ bundler init`
+
 生成されたGemFileのrailsのコメントアウトを外す。
 
 `$ bundle exec rails -v` 

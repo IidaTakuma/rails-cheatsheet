@@ -1,4 +1,4 @@
-##前提
+## 前提
 ローカル環境で
 ```$ rbenv -v```
 ```$ node -v```
@@ -6,7 +6,7 @@
 ```$ psql --version```
 が実行できる。
 
-##環境構築
+## 環境構築
 ```$ mkdir [proj-name]```
 ```$ cd [proj-name]```
 ```$ bundler init```

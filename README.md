@@ -1,9 +1,20 @@
+## ゴール
+
+Rails 6.0.0をデータベースをPostgresqlを設定し、Yay! You’re on Rails! するところまで
+
 ## 前提
+
 ローカル環境で
 `$ rbenv -v`
+
 `$ node -v`
+
 `$ Yarn --v`
+
 `$ psql --version`
+
+`$ bundle -v`
+
 が実行できる。
 
 ## 環境構築
@@ -46,7 +57,13 @@ services:
       - 5432:5432
 ```
 
+` $ docker-compose build`
 
+` $docker-compose up`
+
+` $ bin/rails db:create`
+
+` $ bin/rails server`
 
 参考記事
 

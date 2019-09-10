@@ -13,6 +13,7 @@
 
 ```$ bundler init```
 生成されたGemFileのrailsのコメントアウトを外す
+
 ```$ bundle exec rails -v``` 
 
 - プロジェクト環境のrailsのバージョンを確認する。

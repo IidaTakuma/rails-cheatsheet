@@ -8,7 +8,9 @@
 
 ## 環境構築
 ```$ mkdir [proj-name]```
+
 ```$ cd [proj-name]```
+
 ```$ bundler init```
 生成されたGemFileのrailsのコメントアウトを外す
 ```$ bundle exec rails -v``` 
@@ -28,6 +30,6 @@
 - 「-Tr」「--skip-test」Miniテストを生成しないようにする
 
 参考記事
-<a src="https://qiita.com/dawn_628/items/1821d4eef22b9f45eea8">bundle, bundle execについて</a>
+[bundle, bundle execについて](https://qiita.com/dawn_628/items/1821d4eef22b9f45eea8)
 
-<a src="https://qiita.com/shinkuFencer/items/e6b4e24a92f7b34e9f24">薄いRailsプロジェクトをRails newする</a>
+[薄いRailsプロジェクトをRails newする](https://qiita.com/shinkuFencer/items/e6b4e24a92f7b34e9f24)

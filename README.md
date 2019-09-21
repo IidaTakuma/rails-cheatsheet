@@ -72,7 +72,7 @@ Docker上のデータベースにRailsから接続するための設定をconfig
 development:
   <<: *default
   host: localhost
-  database: toyapp_development
+  database: [proj_name]_development
   username: root
   password: root
 
@@ -84,7 +84,7 @@ development:
 test:
   <<: *default
   host: localhost
-  database: toyapp_test
+  database: [proj_name]_test
   username: root
   password: root
 ```
@@ -98,6 +98,8 @@ test:
 ` $ bin/rails server`
 
 - ローカルでRailsを立ち上げる。
+
+![画像](./images/screenshot01.png)
 
 参考記事
 

@@ -66,9 +66,38 @@ services:
 
 - Docker環境上のPostgresqlを起動
 
+Docker上のデータベースにRailsから接続するための設定をconfig/database.ymlに加える。
+
+```yaml
+development:
+  <<: *default
+  host: localhost
+  database: toyapp_development
+  username: root
+  password: root
+
+  ・
+  ・
+  ・
+  ・
+
+test:
+  <<: *default
+  host: localhost
+  database: toyapp_test
+  username: root
+  password: root
+```
+
+
+
 ` $ bin/rails db:create`
 
+- データベースを作成する。
+
 ` $ bin/rails server`
+
+- ローカルでRailsを立ち上げる。
 
 参考記事
 

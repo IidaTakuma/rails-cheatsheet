@@ -1,6 +1,20 @@
 ## ゴール
 
-Rails 6.0.0をデータベースにPostgresqlを設定し、Yay! You’re on Rails! するところまで
+ローカル環境のRails 6.0.0に、Docker環境のデータベースにPostgresqlを設定し接続、Yay! You’re on Rails! する。
+
+## バージョン
+
+rbenv 1.1.2
+
+Bundler 2.0.2
+
+node.js v12.10.0
+
+yarn 1.17.3
+
+postgresql 11.5
+
+Docker 19.03.2
 
 ## 前提
 
@@ -10,11 +24,15 @@ Rails 6.0.0をデータベースにPostgresqlを設定し、Yay! You’re on Rai
 
 `$ node -v`
 
-`$ Yarn --v`
+`$ yarn -v`
 
 `$ psql --version`
 
 `$ bundle -v`
+
+` $ docker -v` 
+
+` $ docker-compose -v`
 
 が実行できる。
 

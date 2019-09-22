@@ -74,6 +74,8 @@ services:
     hostname: postgres
     ports:
       - 5432:5432
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
 ```
 
 ` $ docker-compose build`

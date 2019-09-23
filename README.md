@@ -54,12 +54,16 @@ Docker 19.03.2
 - 「--path vendor/bundle」を指定することで、railsアプリのルート下のvendor/bundleにインストールされ、そのアプリケーションの中だけにインストールされる。一度上のコマンドを実行すれば、Bundlerはインストール先を記憶するので次回以降は`bundle install`を実行するだけでよい。
 - 「-j4」bundlerを並列処理できる「--jobs=4」
 
-`$ bundle exec rails new . -d postgresql -Tr` 
+`$ bundle exec rails new . -d postgresql -T` 
 
 - 「bundle exec」システム共通ではなくプロジェクト毎のgemを使用する。
 - 「rails new .」で現在のディレクトリをアプリケーション名にrails newする。
 - 「-d postgresql」データベースにPostgresqlを使用することを指定。
-- 「-Tr」「--skip-test」Miniテストを生成しないようにする。
+- 「-T」「--skip-test」Miniテストを生成しないようにする。
+
+
+
+conflict Gemfileみたいなのが出て聞かれたらY
 
 proj-name / docker-compose.ymlに以下を記入
 ```yaml
